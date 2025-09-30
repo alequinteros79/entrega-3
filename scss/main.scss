@@ -1,0 +1,97 @@
+
+$font-main: "Roboto", sans-serif;
+$color-bg: rgb(67, 64, 61);
+$color-text: whitesmoke;
+$color-primary: rgb(255, 149, 0);
+$color-secondary: blueviolet;
+
+body {
+  font-family: $font-main;
+}
+
+h1 {
+  font-style: normal;
+  color: $color-primary;
+  text-align: center;
+}
+
+h2 {
+  color: $color-secondary;
+  text-align: center;
+  padding: 20px;
+}
+
+h3 {
+  padding-left: 5px;
+}
+
+p {
+  font-family: $font-main;
+  font-size: 17px;
+  margin: 20px;
+}
+
+.titulos,
+form {
+  font-family: $font-main;
+}
+
+main {
+  flex-wrap: wrap;
+}
+
+header {
+  font-family: $font-main;
+  background-color: $color-bg;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+
+  nav {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      list-style: none;
+      gap: 15px;
+      padding-right: 10px;
+      color: $color-text;
+
+      a {
+        text-decoration: none;
+        color: $color-text;
+      }
+    }
+  }
+}
+
+.imagen {
+  height: 225px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.carrusel-altura-fija {
+  height: 500px;
+  overflow: hidden; 
+
+  .carousel-item {
+    height: 100%;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover; 
+  }
+}
+
+footer {
+  text-align: center;
+  color: $color-text;
+  background-color: $color-bg;
+  padding: 10px;
+}
